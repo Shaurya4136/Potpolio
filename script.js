@@ -33,21 +33,21 @@ window.addEventListener("scroll", () => {
   })
 })
 
-// function linkAction() {
-//   /*Active link*/
-//   navLinks.forEach((n) => n.classList.remove("active"));
-//   this.classList.add("active");
+function linkAction() {
+   /*Active link*/
+   navLinks.forEach((n) => n.classList.remove("active"));
+   this.classList.add("active");
 
 //   /*Remove menu mobile*/
 const navMenu = document.getElementById("nav-menu");
-//   navMenu.classList.remove("show");
-// }
+   navMenu.classList.remove("show");
+ }
 navLinks.forEach((n) => n.addEventListener("click", () => { navMenu.classList.remove("show") }));
 
 /*===== COPY Email =====*/
 const copy = document.getElementById("copy");
 copy.addEventListener("click", () => {
-  navigator.clipboard.writeText("kasulaarunteja@gmail.com");
+  navigator.clipboard.writeText("shauryapandey4136@gmail.com");
   copy.innerHTML = "copied";
   setTimeout(() => {
     copy.innerHTML = null;
@@ -77,13 +77,13 @@ sr.reveal(".about-text", { delay: 400 });
 sr.reveal(".skills-subtitle", {});
 sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 100 });
-// sr.reveal(".skills-img", { delay: 600 });
+ sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
 sr.reveal(".project-img", { interval: 200 });
 
 /*SCROLL CONTACT*/
-  // sr.reveal(".contact-input", { interval: 200 });
+   sr.reveal(".contact-input", { interval: 200 });
 
   function myFunction(){
     var element = document.body;
@@ -91,12 +91,12 @@ sr.reveal(".project-img", { interval: 200 });
   }
 
 
-  var messageArr = ["Frontend Developer"];
+  var messageArr = ["MERN Stack Specialist"];
   var textPosition = 0;
   var speed = 200;
 
   typewriter = () => {
-    // for(let i = 0; i < messageArr.length; i++) {
+     for(let i = 0; i < messageArr.length; i++) {
     document.querySelector("#jobTitle").innerHTML = messageArr[0].substring(0, textPosition)  ;
     if(textPosition ++  != messageArr[0].length)
         setTimeout(typewriter, speed)
@@ -105,3 +105,4 @@ sr.reveal(".project-img", { interval: 200 });
 
   window.addEventListener("load" , typewriter);
 
+  }
