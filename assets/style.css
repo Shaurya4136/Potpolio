@@ -5,6 +5,9 @@
   --header-height: 3rem;
   --font-semi: 600;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /*===== Colores =====*/
 :root {
