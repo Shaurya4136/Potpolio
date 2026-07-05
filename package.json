@@ -1,0 +1,25 @@
+{
+  "name": "shaurya-pandey-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack MERN portfolio for Shaurya Pandey.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace client\" \"npm run dev --workspace backend\"",
+    "build": "npm run build --workspace client",
+    "start": "node backend/server.js",
+    "lint": "npm run lint --workspace client"
+  },
+  "workspaces": [
+    "client",
+    "backend"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.23.0",
+    "tailwindcss": "^4.3.2"
+  }
+}
